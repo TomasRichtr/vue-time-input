@@ -1,7 +1,18 @@
 {
   "name": "vue-time-input",
   "version": "0.0.1",
-  "private": true,
+  "main": "./dist/vue-time-input.umd.js",
+  "module": "./dist/vue-time-input.es.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "imports": "./dist/vue-time-input.es.js",
+      "require": "./dist/vue-time-input.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
